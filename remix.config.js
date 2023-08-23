@@ -1,5 +1,10 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
+  routes: {
+    '/:post_type': {
+      module: './src/routes/PostList.jsx',
+    },
+  },
   ignoredRouteFiles: ["**/.*"],
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
